@@ -34,8 +34,12 @@ source /etc/profile.d/maven.sh
 mvn --version
 ````
 
-
+------------- Java Home Path ---------------
+````
 find /usr/lib/jvm/java-11* | head -n 3
+````
 
 JAVA_HOME
+````
 /usr/lib/jvm/java-11-amazon-corretto.x86_64
+````
