@@ -1,38 +1,47 @@
 ------------------ Install Apache Tomcat ------------------------
 
-# sudo yum update –y
-# sudo yum install java-11-amazon-corretto-devel
-# java -version
-
-
+````
+sudo yum update –y
+sudo yum install java-11-amazon-corretto-devel
+java -version
+````
+````
 cd /opt
-
+````
+````
 wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.106/bin/apache-tomcat-7.0.106.tar.gz   
-
+````
+````
 tar -xvzf apache-tomcat-7.0.106.tar.gz
-
+````
+````
 mv apache-tomcat-7.0.106 tomcat
-
+````
+````
 cd tomcat
 cd bin
 sh startup.sh 
 shutdown.sh
-
-# cd conf
-# vim tomcat-users.xml
-
+````
+````
+cd conf
+````
+````
+vim tomcat-users.xml
+````
 1. Update users information in the tomcat-users.xml file
-
+````
 <role rolename="manager-script"/>
-  <role rolename="manager-gui"/>
-  <role rolename="manager-jmx"/>
-  <role rolename="manager-status"/>
-  <role rolename="admin-gui"/>
+<role rolename="manager-gui"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<role rolename="admin-gui"/>
 <user username="tomcat" password="tomcat" roles="manager-script,admin-gui,manager-gui,manager-jmx,manager-status"/>
-
+````
 paste end of the script
-# chmod +x /opt/tomcat/bin/startup.sh
-
+````
+chmod +x /opt/tomcat/bin/startup.sh
+````
 
 Check point :
 
