@@ -14,3 +14,15 @@ sudo pip3 install docker-compose
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo systemctl status docker.service
+
+
+docker --version
+docker info
+docker compose --version
+
+sudo find / -name "docker-compose" -ls
+/usr/local/bin/docker-compose
+
+# if it is not docker compose path you need to add path
+echo "$PATH"
+export PATH=$PATH:/usr/local/bin
