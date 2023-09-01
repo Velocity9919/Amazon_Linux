@@ -99,7 +99,7 @@ sudo systemctl restart nexus
 
 
 
-                SETUP NEXUS IN JENKINSJOB
+SETUP NEXUS IN JENKINSJOB
 
 
 PLUGIN : nexus artifact uploader
