@@ -42,7 +42,7 @@ access tomcat application from browser on port 8080
 username : tomcat
 password : tomcat
 
-              Deploy to container Plugin installation
+----------------------------- Deploy to container Plugin installation ---------------------------------------------
 
 jenkins--> Manage plugin --> available --> deploy to container--> Click Install without restart
 
@@ -55,7 +55,7 @@ id : tomcat-user
 descripition : tomcat-username-password
 click on add
 
-                DEPLOY WARFILE ON TOMCAT USING TOMCAT
+--------------------------------------- DEPLOY WARFILE ON TOMCAT USING TOMCAT --------------------------------------------
 
 source code : https://github.com/ynareshbabu/war-file--tomcat.git
 
