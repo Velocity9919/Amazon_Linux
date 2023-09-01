@@ -98,6 +98,7 @@ sudo systemctl restart nexus
 ````
 
 
+
                 SETUP NEXUS IN JENKINSJOB
 
 
