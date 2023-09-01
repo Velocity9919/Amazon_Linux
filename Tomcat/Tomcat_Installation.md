@@ -46,9 +46,11 @@ chmod +x /opt/tomcat/bin/startup.sh
 Check point :
 
 access tomcat application from browser on port 8080  
+ 
  - http://<Public_IP>:8080
 
 username : tomcat
+
 password : tomcat
 
 ----------------------------- Deploy to container Plugin installation ---------------------------------------------
@@ -59,9 +61,13 @@ jenkins--> Manage plugin --> available --> deploy to container--> Click Install 
 Manage Jenkins --> manage Credentials --> add Credentials
 
 username : tomcat
+
 password : tomcat
+
 id : tomcat-user
+
 descripition : tomcat-username-password
+
 click on add
 
 --------------------------------------- DEPLOY WARFILE ON TOMCAT USING TOMCAT --------------------------------------------
@@ -69,20 +75,31 @@ click on add
 source code : https://github.com/ynareshbabu/war-file--tomcat.git
 
 go to the jenkins--> new item --> item name : deploying war file
+
 select maven project --> ok
+
 description : deploying war file on tomcat
+
 source code management : git
 
 Build : pom.xml --> clean install
 
 
-# Post Build Action
+Post Build Action
    deploy war/ear to a container
+   
    WAR/EAR files : **/*.war
+   
    contest path : ----
+   
    containers : tomcat 7.x remote
+               
                credentials : 
+               
                tomcat url : http://13.232.221.139:8080/
+               
                apply and save
+  
   Build now
+  
   build is successful
